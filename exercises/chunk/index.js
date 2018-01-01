@@ -8,19 +8,19 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-// function chunk(array, size) {
-//     let results=[]
+function chunk(array, size) {
+    let results=[]
     
   
-//   while(array.length>=size){
-//     results.push(array.splice(0,size))
-//     console.log(array)
-//   }
-//   if(array.length) results.push(array)
-//   return results
-// }
+  while(array.length>=size){
+    results.push(array.splice(0,size))
+    console.log(array)
+  }
+  if(array.length) results.push(array)
+  return results
+}
 
-
+//THIS SOLUTION IS CONFUSING AND EXTRA WORK. NOT STRAIGHTOFORWARD
 // function funkyChunky(array,size){
 //     let chunked=[]
 //     for(let element of array){
