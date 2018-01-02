@@ -98,4 +98,20 @@ function steps(num,row=0,string=''){
     
     
   }
+
+  //further condensed
+  function steps(num,row=0,string=''){
+  
+    if(num===row) return;
+    
+    if(string.length===num){
+      console.log(string)
+      return steps(num,row+1)
+    }
+    
+    const add = string.length<=row ? '#' : ' '
+    steps(num,row,string+add)
+    
+    
+  }
 module.exports = steps;
