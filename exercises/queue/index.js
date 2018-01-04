@@ -8,6 +8,18 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
-
+ // here we are using 2015 class 
+ class Queue{
+    //constructor is automatically called whenever we define a new instance
+    constructor(){
+      this.data=[]
+    }
+    add(data){
+      this.data.unshift(data);
+    }
+    remove(){
+      return this.data.pop();
+    }
+    
+  }
 module.exports = Queue;

@@ -19,25 +19,25 @@
 
 //this is the firs solution that came to mind. But what is the O(n) of the repeat function?
 //EASIEST TO READ!
-// function steps(num){
-//     for(var i =1;i<=num;i++){
-//       console.log('#'.repeat(i)+' '.repeat(num-i))
-//     }
-//    }
+function steps(num){
+    for(var i =1;i<=num;i++){
+      console.log('#'.repeat(i)+' '.repeat(num-i))
+    }
+   }
 
 
 
 //this is the iterative solution with two for loops and an O(n^2)
-// function steps(num){
-//     for(var row=1;row<=num;row++){
-//      let stair=''
-//        for(var col=1;col<=num;col++){ //we create rows
-//          if(col<=row) stair+='#'
-//          else stair+=' '
-//        }
-//        console.log(stair)
-//     }
-//    }
+function steps(num){
+    for(var row=1;row<=num;row++){
+     let stair=''
+       for(var col=1;col<=num;col++){ //we create rows
+         if(col<=row) stair+='#'
+         else stair+=' '
+       }
+       console.log(stair)
+    }
+   }
    
 //RECURSIVE CASE FOR LOOP 
 function steps(num,pass=0){
