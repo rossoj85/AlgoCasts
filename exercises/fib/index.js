@@ -56,7 +56,7 @@ function fib(n) {           //exponential runtime
 
 
   //SIMPLIFIED RECURSIVE WITH MEMO 
-  function fib(n, memo={}){
+  function fib(n, memo={}){             //O(n) linear runtime
     if(n===1 || n===0) return n
     
     else if(memo[n]) return memo[n]
